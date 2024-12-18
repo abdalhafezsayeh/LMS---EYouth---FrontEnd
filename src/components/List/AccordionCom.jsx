@@ -11,7 +11,6 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
-  Divider,
   Accordion,
   AccordionSummary,
   AccordionDetails,
@@ -48,8 +47,9 @@ function AccordionCom() {
               padding: 0,
               minHeight: "auto",
               "& .MuiAccordionSummary-content": {
-                marginTop: 5,
+                marginTop:2
               },
+              background:"#EEE"
             }}
           >
             <Box sx={{ marginLeft: "10px" }}>
@@ -72,10 +72,8 @@ function AccordionCom() {
           </AccordionSummary>
 
           {/* Section Content */}
-          <AccordionDetails sx={{ padding: 0 }}>
-            <Divider />
-            {/* Lesson List */}
-            <List>
+          <AccordionDetails sx={{ padding: 0, paddingX:"10px" }}>
+            <List >
               {section.lessons.map((lesson, index) => (
                 <ListItem
                   key={index}

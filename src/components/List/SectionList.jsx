@@ -15,7 +15,7 @@ const SectionProgressList = ({ setIsVisibleSide}) => {
   };
 
   return (
-    <Box sx={{borderLeft:"2px solid #eee"}}>
+    <Box sx={{borderLeft:"2px solid #DCE4C9"}}>
         <Box
           sx={{
             display: "flex",
@@ -24,7 +24,6 @@ const SectionProgressList = ({ setIsVisibleSide}) => {
             backgroundColor: "white",
             padding: "10px",
             borderBottom:"1px solid #D8DBBD",
-            
             position:"fixed",
             zIndex:1,
           }}
